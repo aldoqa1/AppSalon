@@ -1,0 +1,36 @@
+@use 'variables' as v;
+
+h1, h2, h3 {
+    font-family: v.$mainFont;
+    margin: 0 0 calc(v.$separation / 2) 0 ;
+    font-weight: v.$bolder;
+    color: v.$white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+p {
+    color: v.$white;
+    font-size: 2rem;
+}
+
+.name-page {
+    text-align: center;
+    margin: 5rem 0;
+    font-weight: v.$bold;
+}
+.description-page {
+    text-align: center;
+}

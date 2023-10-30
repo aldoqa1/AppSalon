@@ -1,0 +1,58 @@
+@use "./../base/mixins" as m;
+@use "./../base/variables" as v;
+
+.nav{
+    background-color: v.$blue;
+    color: v.$white;
+    margin: 0rem;
+    width: 100%;
+
+
+    ul{
+        padding-left: 0rem;
+        display: flex;
+        align-items: center;
+        list-style: none;
+        height: 6rem;
+        justify-content: space-around;
+
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            font-size: 2rem;
+            font-weight: v.$bold;
+            text-align: center;
+            height: 100%;
+            width: 100%;
+            cursor: pointer;
+
+            &:hover{
+                background-color: darken(v.$blue, 20%);
+            }
+
+            &.navTab-active:hover{
+                background-color: v.$white;
+            }
+        }
+
+    }
+
+
+}
+
+@include m.phone(){
+    .nav ul{
+        flex-direction: column;
+        height: 10rem;
+    }
+
+
+}
+
+.navTab-active{
+    background-color: v.$white;
+    color:  v.$blue;
+
+}

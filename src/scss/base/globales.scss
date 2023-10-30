@@ -1,0 +1,41 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    background-color: v.$black;
+    color: v.$white;
+    font-family: v.$mainFont;
+    font-size: 1.6rem;
+
+}
+
+.container {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.app{
+    overflow-y: scroll;
+    height: 100vh;
+    resize: vertical;
+}

@@ -1,0 +1,21 @@
+/** Media Queries **/
+.success, .error {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+.success p, .error p {
+  margin: 1rem;
+}
+
+.error {
+  background-color: #cb0000;
+}
+
+.success {
+  background-color: #329f00;
+}

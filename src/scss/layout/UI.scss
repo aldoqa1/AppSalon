@@ -1,0 +1,28 @@
+@use "./../base/variables" as v;
+@use "./../base/mixins" as m;
+
+.container-app{
+
+    @include m.grid(2, 0rem);
+
+    @include m.tablet(){
+        @include m.grid(1, 1rem);
+    }
+}
+
+.image{
+    background-image: url("/build/img/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+
+    @include m.tablet(){
+        height: 20rem;
+    }
+}
+
+.app{
+    padding: 0rem 1rem;
+}
+

@@ -1,0 +1,23 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.success,.error{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: v.$white;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    p{
+        margin: 1rem;
+    }
+}
+
+.error{
+    background-color: v.$red;
+}
+
+.success{
+    background-color: v.$green;
+}

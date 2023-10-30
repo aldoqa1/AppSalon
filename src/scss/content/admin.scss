@@ -1,0 +1,16 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+h3.margin{
+    margin: 3rem auto;
+}
+
+.summary.admin{
+
+    padding-top:4rem;
+}
+
+.button-delete{
+    @include m.button(v.$red, v.$white);
+    margin: 0rem;
+}

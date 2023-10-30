@@ -1,0 +1,86 @@
+/** Media Queries **/
+.services-list {
+  width: 85%;
+  margin: auto;
+  padding: 0.5rem 1rem;
+  color: black;
+}
+.services-list div {
+  transition: 0.4s all ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: rgb(108, 106, 106);
+  cursor: pointer;
+}
+.services-list div:nth-last-child(1) {
+  border-bottom: none;
+}
+.services-list div:nth-child(odd) {
+  background-color: rgb(54, 53, 53);
+}
+.services-list div:hover {
+  background-color: rgb(51, 94, 107);
+}
+.services-list div.service-active {
+  background-color: #0da6f3;
+}
+
+@media (max-width: 480px) {
+  .services-list {
+    width: 90%;
+  }
+  .services-list div {
+    flex-direction: column;
+  }
+  .services-list p {
+    margin: 0.5rem auto;
+  }
+}
+.list-price {
+  font-size: 2.5rem;
+  color: #9aff6c;
+  font-weight: bolder;
+}
+
+.button-logout {
+  background-color: #329f00;
+  padding: 1.5rem 4rem;
+  color: #FFFFFF;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  border: none;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  text-align: center;
+  display: block;
+  width: auto;
+  border-radius: 1rem;
+  margin-right: 3rem;
+  margin-bottom: 2rem;
+  padding: 1rem 1.5rem;
+}
+@media (max-width: 768px) {
+  .button-logout {
+    width: 100%;
+    margin-right: auto;
+  }
+}
+.button-logout:hover {
+  background-color: #226c00;
+  cursor: pointer;
+}
+
+.services .summary-services {
+  margin-top: 2rem;
+  border-top: 1px solid gray;
+}
+.services .summary-services:nth-child(1) {
+  border: none;
+}
+.services .button-position-between:nth-child(1) {
+  border: none;
+}

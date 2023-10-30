@@ -1,0 +1,84 @@
+@use "../base/mixins" as m;
+@use "../base/variables" as v;
+
+.services-list{
+    width: 85%;
+    margin: auto;
+    padding: 0.5rem 1rem;color: black;
+
+    div{
+        transition: 0.4s all ease-in-out;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        margin: 0.5rem;
+        border-radius: 0.5rem;
+        background-color: rgb(108, 106, 106);
+        cursor: pointer;
+
+        &:nth-last-child(1){
+            border-bottom: none;
+        }
+
+        &:nth-child(odd){
+            background-color: rgb(54, 53, 53);
+        }
+
+        &:hover{
+            background-color:rgb(51, 94, 107);
+        }
+    }
+    div.service-active{
+        background-color: v.$blue;
+    }
+}
+
+@include m.phone(){
+
+.services-list{
+    width: 90%;
+
+    div{
+        flex-direction: column;
+    }
+    p{
+        margin: 0.5rem auto;
+    }
+}
+}
+
+.list-price{
+    font-size: 2.5rem;
+    color: lighten(v.$green, 40%);
+    font-weight: bolder;
+}
+
+.button-logout{
+    @include m.button(v.$green, v.$white);
+    padding: 1rem 1.5rem;
+
+}
+
+.services{
+
+    .summary-services{
+        margin-top: 2rem;
+        border-top: 1px solid gray;
+
+
+
+        &:nth-child(1){
+            border: none;
+        }
+    }
+
+    .button-position-between{
+        &:nth-child(1){
+            border: none;
+        }
+
+    }
+
+
+}
+

@@ -1,0 +1,258 @@
+/** Media Queries **/
+.field {
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  align-items: center;
+}
+.field label {
+  font-size: 2rem;
+  width: 10rem;
+}
+.field select, .field input {
+  width: calc(100% - 10REM);
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  border: transparent;
+}
+.field select:disabled, .field input:disabled {
+  color: white;
+}
+
+.button-position-end {
+  display: flex;
+  justify-content: end;
+}
+
+.button-position-space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.button-position-space h3 {
+  margin: 0;
+}
+.button-position-space input {
+  margin: 1rem;
+  height: 4rem;
+  width: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem;
+}
+
+.button-position-between {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  border-top: 1px solid gray;
+  text-align: center;
+}
+.button-position-between .summary.admin {
+  margin: 0rem;
+}
+.button-position-between.welcome {
+  border: none;
+}
+.button-position-between .button-delete {
+  margin: 0.5rem;
+  padding: 1rem 1.5rem;
+}
+.button-position-between .button-register {
+  margin: 0.5rem;
+  padding: 1rem 1.5rem;
+}
+.button-position-between.services {
+  background-color: transparent;
+}
+
+.button-position-between.welcome {
+  margin: auto;
+  margin-top: 1rem;
+  display: block;
+  border-bottom: 1px solid gray;
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+.button-position-between.welcome .button-admin {
+  text-wrap: nowrap;
+  display: inline-block;
+  margin: 1rem;
+  padding: 1rem 2rem;
+}
+@media (max-width: 768px) {
+  .button-position-between.welcome {
+    flex-direction: column;
+  }
+  .button-position-between.welcome .button-admin {
+    width: 96%;
+    text-align: center;
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .button-position-space.first {
+    flex-direction: column;
+  }
+}
+.section {
+  display: none;
+}
+.section p {
+  text-align: center;
+}
+
+.button-login {
+  background-color: #0da6f3;
+  padding: 1.5rem 4rem;
+  color: #FFFFFF;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  border: none;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  text-align: center;
+  display: block;
+  width: auto;
+  border-radius: 1rem;
+  margin-right: 3rem;
+  margin-bottom: 2rem;
+  padding: 1rem 1.5rem;
+}
+@media (max-width: 768px) {
+  .button-login {
+    width: 100%;
+    margin-right: auto;
+  }
+}
+.button-login:hover {
+  background-color: #0a85c3;
+  cursor: pointer;
+}
+
+.button-admin {
+  background-color: rgb(97, 91, 40);
+  padding: 1.5rem 4rem;
+  color: #FFFFFF;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  border: none;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  text-align: center;
+  display: block;
+  width: auto;
+  border-radius: 1rem;
+  margin-right: 3rem;
+  margin-bottom: 2rem;
+  padding: 1rem 1.5rem;
+}
+@media (max-width: 768px) {
+  .button-admin {
+    width: 100%;
+    margin-right: auto;
+  }
+}
+.button-admin:hover {
+  background-color: #3d3919;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.actions p {
+  color: #FFFFFF;
+  font-size: 1.8rem;
+}
+.actions a {
+  color: #329f00;
+  font-size: 1.8rem;
+}
+@media (max-width: 1024px) {
+  .actions {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+.visibilityOff {
+  visibility: hidden;
+}
+
+.displayblock {
+  display: block;
+}
+
+.success, .error {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+.success p, .error p {
+  margin: 1rem;
+}
+
+.error {
+  background-color: #cb0000;
+}
+
+.success {
+  background-color: #329f00;
+}
+
+.nav {
+  background-color: #0da6f3;
+  color: #FFFFFF;
+  margin: 0rem;
+  width: 100%;
+}
+.nav ul {
+  padding-left: 0rem;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  height: 6rem;
+  justify-content: space-around;
+}
+.nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+.nav ul li:hover {
+  background-color: #076493;
+}
+.nav ul li.navTab-active:hover {
+  background-color: #FFFFFF;
+}
+
+@media (max-width: 480px) {
+  .nav ul {
+    flex-direction: column;
+    height: 10rem;
+  }
+}
+.navTab-active {
+  background-color: #FFFFFF;
+  color: #0da6f3;
+}

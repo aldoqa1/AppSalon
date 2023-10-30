@@ -1,0 +1,38 @@
+/** Media Queries **/
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1b15;
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+}
+
+.container {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.app {
+  overflow-y: scroll;
+  height: 100vh;
+  resize: vertical;
+}

@@ -1,0 +1,20 @@
+{
+    "name": "aldo9/6",
+    "autoload": {
+        "psr-4": {
+            "MVC\\": "./",
+            "Model\\": "./models",
+            "Controller\\": "./controllers"
+        }
+    },
+    "authors": [
+        {
+            "name": "Aldo",
+            "email": "pdeprueba@deprueba.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.8",
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

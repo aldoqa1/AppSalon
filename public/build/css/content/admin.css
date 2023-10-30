@@ -1,0 +1,37 @@
+/** Media Queries **/
+h3.margin {
+  margin: 3rem auto;
+}
+
+.summary.admin {
+  padding-top: 4rem;
+}
+
+.button-delete {
+  background-color: #cb0000;
+  padding: 1.5rem 4rem;
+  color: #FFFFFF;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  border: none;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  text-align: center;
+  display: block;
+  width: auto;
+  border-radius: 1rem;
+  margin-right: 3rem;
+  margin-bottom: 2rem;
+  margin: 0rem;
+}
+@media (max-width: 768px) {
+  .button-delete {
+    width: 100%;
+    margin-right: auto;
+  }
+}
+.button-delete:hover {
+  background-color: #980000;
+  cursor: pointer;
+}

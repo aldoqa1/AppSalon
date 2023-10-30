@@ -1,0 +1,30 @@
+/** Media Queries **/
+.container-app {
+  display: grid;
+  gap: 0rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 768px) {
+  .container-app {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.image {
+  background-image: url("/build/img/1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+@media (max-width: 768px) {
+  .image {
+    height: 20rem;
+  }
+}
+
+.app {
+  padding: 0rem 1rem;
+}
