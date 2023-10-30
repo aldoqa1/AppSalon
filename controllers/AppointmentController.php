@@ -16,7 +16,7 @@ class AppointmentController{
 
             foreach($appointments as $appointment){
                 $array = explode(":",$appointment->time);
-                echo intval($array[0])  . " ";
+
             }
 
             $nameUser = $_SESSION["name"] . " " . $_SESSION["lastname"];
